@@ -1,3 +1,9 @@
+CREATE TABLE courses (
+    course_code VARCHAR(10) PRIMARY KEY,
+    course_name VARCHAR(255) NOT NULL
+);
+
+
 CREATE TABLE quiz_questions (
     id SERIAL PRIMARY KEY,
     course_code VARCHAR(255) NOT NULL,
