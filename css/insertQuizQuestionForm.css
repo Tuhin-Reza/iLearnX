@@ -1,0 +1,219 @@
+.insertQuizQuestion {
+  text-align: center;
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.inputField {
+  height: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: black;
+}
+
+textarea {
+  resize: none;
+}
+
+.quizQuestionInputField {
+  height: 500px;
+}
+
+.inputLabel {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*------------------------ button area -------------------------------*/
+.btn.notificationButton:active,
+.btn.notificationButton:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.crudBtn-label {
+  position: relative;
+  left: -12px;
+  display: inline-block;
+  padding: 7px 10px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px 0 0 3px;
+}
+
+.crudBtn-labeled {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.btn.crudBtn-labeled.crudButton:active,
+.btn.crudBtn-labeled.crudButton:focus {
+  outline: none;
+  border: none;
+}
+
+.crudButton {
+  height: 35px;
+}
+
+.btn.closeButton:active,
+.btn.closeButton:focus {
+  outline: none !important;
+  border: none !important;
+}
+.addMoreQuestionButton {
+  margin-left: -12px;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+.eraseQuestion {
+  margin-left: 18px;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.quizQuestionBox {
+  margin-bottom: 30px;
+}
+
+.hidden-footer {
+  display: none;
+}
+
+.modal-footer {
+  padding: 15px;
+  margin: 0;
+  margin-top: 5px;
+  width: 100%;
+}
+
+/*------------------------ Media Area-------------------------------*/
+body {
+  min-width: 320px;
+}
+
+@media screen and (max-width: 319px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 343px) {
+  .questionCounting {
+    margin-bottom: 2px;
+  }
+
+  .eraseQuestion {
+    margin-left: 2px;
+  }
+
+  .questionOption {
+    margin-bottom: 15px;
+  }
+  .notification {
+    margin-top: 5px;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 344px) and (max-width: 480px) {
+  .questionOption {
+    margin-bottom: 15px;
+  }
+  .notification {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 487px) {
+  .eraseQuestion {
+    margin-left: 2px;
+  }
+  .questionOption {
+    margin-bottom: 15px;
+  }
+  .notification {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 488px) and (max-width: 767px) {
+  .eraseQuestion {
+    margin-left: 2px;
+  }
+
+  .questionOption {
+    margin-bottom: 15px;
+  }
+
+  .notificationGroup {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-sm-8 {
+    flex-grow: 1;
+  }
+
+  .col-sm-4 {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .eraseQuestion {
+    margin-left: 2px;
+  }
+
+  .pointCounting {
+    margin-left: 20px;
+  }
+
+  .notificationGroup .col-sm-8 {
+    width: 48.33333333333333%;
+  }
+
+  .notificationGroup .col-sm-4 {
+    width: 51.66666666666667%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .eraseQuestion {
+    margin-left: 2px;
+  }
+
+  .pointCounting {
+    margin-left: 20px;
+  }
+
+  .notificationGroup .col-sm-8 {
+    width: 48.33333333333333%;
+  }
+
+  .notificationGroup .col-sm-4 {
+    width: 51.66666666666667%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .eraseQuestion {
+    margin-left: 2px;
+  }
+
+  .pointCounting {
+    margin-left: 20px;
+  }
+}

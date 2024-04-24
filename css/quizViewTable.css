@@ -1,0 +1,184 @@
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#quizTable {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+.table-title {
+  padding-bottom: 15px;
+  background: #435d7d;
+  color: #fff;
+  padding: 16px 30px;
+  min-width: 100%;
+  margin: -20px -25px 10px;
+  border-radius: 3px 3px 0 0;
+}
+
+.tableCaption {
+  padding: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-title .btn-group {
+  float: right;
+}
+
+.table-title .btn {
+  color: #fff;
+  float: right;
+  font-size: 13px;
+  border: none;
+  min-width: 50px;
+  border-radius: 2px;
+  border: none;
+  outline: none !important;
+  margin-left: 10px;
+  width: 200px;
+}
+
+.table-title .btn i {
+  float: left;
+  font-size: 21px;
+  margin-right: 5px;
+  margin-top: 3px;
+  margin-left: 15px;
+}
+
+.table-title .btn span {
+  float: left;
+  font-size: 17px;
+  margin-top: 2px;
+}
+
+table tr {
+  background-color: #fff;
+  border: 1px solid #e1e5e9;
+}
+
+table thead tr {
+  background: black;
+  color: red;
+}
+
+table th {
+  padding: 1.625em;
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table td {
+  padding: 0.5em;
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table td:nth-child(4) {
+  font-size: 18px;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+table tbody tr td .btn-invoice {
+  background: yellow; /* changed to yellow */
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 20px;
+  border: 0;
+  font-family: cursive;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eee;
+  color: black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+  color: black;
+}
+
+table.table-striped.table-hover tbody tr:hover {
+  background: #f5f5f5;
+}
+
+.quizviewtable tbody tr td a.edit i {
+  color: #ffc107;
+  padding-left: 10px;
+}
+
+.quizviewtable tbody tr td a.delete i {
+  color: #f44336;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .tableCaptionTitle {
+    margin-left: 10px;
+  }
+  .tableCaption {
+    padding: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  table caption {
+    font-size: 5em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    padding: 0;
+  }
+  table tr {
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table th,
+  table td {
+    padding: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #e1e5e9;
+    display: block;
+    font-size: 1em;
+    text-align: right;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  table td:nth-child(4) {
+    font-size: 0.8em;
+  }
+}
