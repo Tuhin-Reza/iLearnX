@@ -49,7 +49,8 @@ function quizData() {
             '" data-qzid="' +
             quiz.qzid +
             '" style="outline: none; border: none;"><span class="glyphicon glyphicon-pencil"></span> Edit</button>';
-            rowHtml +=
+            
+          rowHtml +=
             '<button class="btn btn-danger btn-md delete" type="button" data-toggle="modal" data-placement="top" title="Delete" data-qzid="' +
             quiz.qzid +
             '" data-cid="' +
