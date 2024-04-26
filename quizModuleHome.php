@@ -3,13 +3,6 @@ session_start();
 $_SESSION['cid'] = 'C101';
 $_SESSION['iid'] = 'I0';
 $_SESSION['qzid'] = 'Quiz 10';
-
-// if (isset($_GET['cid']) && isset($_GET['iid'])) {
-//     $_SESSION['cid'] = $_GET['cid'];
-//     $_SESSION['iid'] = $_GET['iid'];
-// } else {
-//     header("Location: error_message.php");
-// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,57 +16,50 @@ $_SESSION['qzid'] = 'Quiz 10';
 
     <link rel="stylesheet" href="./css/quizViewTable.css">
     <link rel="stylesheet" href="./css/insertQuizQuestionForm.css">
-    <style>
-        .btn:active {
-            outline: none !important; /* Remove outline */
-    border: none !important; /* Remove border */
-}
-
-    </style>
 </head>
 
 <body>
 
-<section id="quizViewTable" class="quizviewtable">
-    <div class="container-xl">
-        <div class="table-responsive">
-            <div class="table-wrapper">
-                <div class="table-title">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="#addQuizQuestionModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>ADD NEW QUIZ</span></a>
+    <section id="quizViewTable" class="quizviewtable">
+        <div class="container-xl">
+            <div class="table-responsive">
+                <div class="table-wrapper">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="#addQuizQuestionModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>ADD NEW QUIZ</span></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th>Quiz ID</th>
-                            <th>Quiz Title</th>
-                            <th>Total Point</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Quiz ID</th>
+                                <th>Quiz Title</th>
+                                <th>Total Point</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                    </tbody>
-                </table>
-                <div class="clearfix">
-                    <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-                    <ul class="pagination">
-                        <li class="page-item disabled"><a href="#">Previous</a></li>
-                        <li class="page-item"><a href="#" class="page-link">1</a></li>
-                        <li class="page-item"><a href="#" class="page-link">2</a></li>
-                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                        <li class="page-item"><a href="#" class="page-link">4</a></li>
-                        <li class="page-item"><a href="#" class="page-link">5</a></li>
-                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                    </ul>
+                        </tbody>
+                    </table>
+                    <div class="clearfix">
+                        <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a href="#">Previous</a></li>
+                            <li class="page-item"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">4</a></li>
+                            <li class="page-item"><a href="#" class="page-link">5</a></li>
+                            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <section id="insertQuizQuestionSection">
