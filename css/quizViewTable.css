@@ -32,25 +32,26 @@
 
 .table-title .btn {
   background-color: #ff3115;
+  padding: 10px;
   color: white;
-  font-size: 20px; 
   border: none;
-  border-radius: 2px;
   outline: none !important;
-  width: 300px;
+  width: 280px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center; 
+  border-radius: 0px;
 }
 .table-title .btn i {
-  font-size: 30px;
+  font-size: 25px;
   margin-right: 10px;
 }
 
 .table-title .btn span {
   margin-top: 5px;
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .table-title .btn:hover {
