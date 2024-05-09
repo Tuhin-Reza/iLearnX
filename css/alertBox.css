@@ -1,0 +1,25 @@
+.swal-title {
+    font-size: 27px;
+  }
+  
+.swal-text {
+    font-size: 15px; 
+  }
+  
+
+.swal2-icon {
+  font-size: 18px;
+}
+
+.swalbtn:focus,
+.swalbtn:active:focus,
+.swalbtn.active:focus,
+.swalbtn.focus,
+.swalbtn:active.focus,
+.swalbtn.active.focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.swalbtn {
+  margin-right: 10px;
+}

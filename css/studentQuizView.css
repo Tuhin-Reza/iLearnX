@@ -1,0 +1,223 @@
+.modal-dialog {
+  top: 10%;
+  width: 65%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.modal-body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.studentQuizViewTitlePlusTotalPointBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#studentQuizViewTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.studentQuizViewTitlePlusTotalPointBox .studentViewQuizTotalPointBox .badge-light {
+    background-color: white;
+    color: black;
+}
+
+.studentViewQuizQuestionsContainer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.quizQuestionPlusPointBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quizQuestionPlusPointBox .pointRight .badge-light {
+  background-color: #ff3115;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.question {
+  color: black;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+#studentViewQuizQuestions {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Option area radio button */
+.radiobtn {
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  color: #666;
+  font-size: 16px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  line-height: 15px;
+  display: inline-block;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #666;
+  border-radius: 100%;
+  background: #fff;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: black;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* -----------btn area --------------------- */
+.btnContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-labeled .glyphicon {
+  color: white;
+  padding-right: 8px;
+}
+.btn.btn-text:focus,
+.studentQuizViewCloseBtnIcon:focus,
+.studentQuizViewCloseBtn:focus,
+#studentQuizViewPoint:focus,
+#studentQuizViewTotalPoint:focus,
+.btn.btn-text:active,
+.studentQuizViewCloseBtnIcon:active,
+.studentQuizViewCloseBtn:active,
+#studentQuizViewPoint:active,
+#studentQuizViewTotalPoint:active,
+.btn.btn-text:active:focus,
+.studentQuizViewCloseBtnIcon:active:focus,
+.studentQuizViewCloseBtn:active:focus,
+#studentQuizViewPoint:active:focus,
+#studentQuizViewTotalPoint:active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#studentQuizSubmitButton {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2px;
+}
+.studentQuizViewCloseBtn {
+  margin-right: 2px;
+}
+
+.studentQuizViewCloseBtnIcon {
+  display: none;
+  margin-right: 2px;
+}
+
+@media only screen and (max-width: 345px) {
+  .studentQuizViewCloseBtnIcon {
+    display: block;
+  }
+  .studentQuizViewCloseBtn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #studentQuizSubmitButton {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2px;
+  }
+  .modal-dialog {
+    width: 100%;
+    margin: 0;
+  }
+
+  .studentViewQuizQuestionBox {
+    width: 100%;
+  }
+  .question {
+    font-size: 18px;
+  }
+  .studentQuizViewTitlePlusTotalPointBox {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .modal-dialog {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .studentViewQuizQuestionBox {
+    width: 100%;
+  }
+  .question {
+    font-size: 18px;
+  }
+}
